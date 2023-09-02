@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDBI</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Poppins', sans-serif ;
+      }
+      body{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(1, 1, 46);
+      }
+      .box{
+        color: aliceblue;
+        position: relative;
+        width: 300px;
+        height:400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(91, 89, 89, 0.5);
+        overflow: hidden;
+        border-radius: 5px;
+      }
+      .box::before{
+        content: '';
+        position: absolute;
+        width: 150px;
+        height: 140%;
+        background:linear-gradient(#00ccff,#d400d4);
+        animation: animate 4s linear infinite;
+      }
+      .box::after{
+        content: '';
+        position: absolute;
+        inset: 4px;
+        background: black;
+      }
+      @keyframes animate {
+        0%
+        {
+          transform: rotate(0deg);
+        }
+        100%
+        {
+          transform: rotate(360deg);
+        }
+      }
+      .box nav{
+        position: relative;
+        color: aliceblue;
+        z-index: 10;
+
+        
+      }
+        
+      
+
+
+    </style>
+</head>
+<body>
+  <div class="box">
+    <nav>
+    <h2><u>LOGIN PAGE</u></h2><BR><br>
+    <H2><LABLE>EMAIL:</LABLE></H2>
+    <input type="EMAIL" placeholder="EMAIL">
+    <br/><br>
+    <H2><LABLE>PASSWORD:</LABLE></H2>
+    <INPUT TYPE= "password" placeholder="PASSWORD" >
+      <a href ="ASRLOAN5.html"><br>
+        <br><button><h3>submit</h3></button>
+    </a>
+    </nav>
+
+  </div>
+</body>

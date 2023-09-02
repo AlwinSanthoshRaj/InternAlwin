@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!DOCTYPE html>
+ <html lang="en">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            display: flex;
+            color: aliceblue;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: rgb(14, 13, 13);
+            overflow: hidden;
+        }
+        .loader {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(45deg,transparent,transparent 40%,#e5f403);
+            animation: animate 2s linear infinite ;
+        }
+        @keyframes animate{
+            0%{
+                transform : rotate(0deg);
+                filter: hue-rotate(0deg);
+            }   
+            100%{
+                transform: rotate(360deg);
+                filter: hue-rotate(360deg);
+        }
+    }
+        .loader::before{
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background-color: #0c0c0c;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .loader::after{
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 6px;
+            background-color: linear-gradient(45deg,transparent,transparent 40%,#e5f403);;
+            border-radius: 25%;
+            z-index: 1000;
+            z-index: 1;
+            filter: blur(30px);
+
+        }
+        .loader nav{
+            padding: 20em;
+            height: 100vh;
+        }
+    
+        
+    </style>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDBI</title>
+    </head>
+    <body>
+        <div class="loader"></div>
+        <nav>
+        <h2>LOADER</h2>
+        </nav>
+
+    </body>
+ </html>

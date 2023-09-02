@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+    
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            color: aliceblue;
+            overflow: hidden;
+            z-index: 1;
+            
+        }
+        nav{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;}
+            nav ul{ 
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        nav ul li{
+            list-style-type: none;
+            padding: 5px;
+            margin: 10px;
+            margin-right: 40px;}
+            nav ul li a{
+        text-decoration: none;
+        color: antiquewhite;
+        text-transform: uppercase;
+        font-size:1.5rem;
+        font-weight: bolder;
+        font-family: 'Courier New', Courier, monospace;
+padding-right: 25px;}
+nav h1{
+            fo1nt-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            color:black;}
+            nav a:hover{
+            background-color: black;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 3px;
+            border: none;
+            font-size: 1.0rem;}
+
+        .box{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .ASR {
+            position: relative;
+            display: flex;
+
+        }
+        .ASR span{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #030303;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #eff1f244,0 0 50px #fafcfd,0 0 0 10px #080808;
+            animation: animate 15s linear infinite;
+        }
+        .ASR span:nth-child(odd){
+            background: red;
+            box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #e8ba04,0 0 0 10px #fbf9f9;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(50s / var(--i));
+
+        }
+        .ASR span:nth-child(even){
+            background: rgb(9, 247, 251);
+            box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #00ccff,0 0 0 10px #d400d4;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(50s / var(--i));}
+        
+        @keyframes animate{
+            0%{
+                transform: translateY(100vh) scale(0);
+            }
+            100%{
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+        
+.con{
+   position: relative;
+   width: 60%;
+   
+  
+}
+.swiper{
+    width: 80%;
+    height: fit-content;
+}
+.swiper-slide img{
+    width: 100%;
+
+}
+.swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color:#0b0b0b !important ;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #0e0e0e;
+}
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h1>LOAN APPLICATION</h1><!--header-->
+    <UL>
+        <li>
+            <a href="">hOME</a>
+        </li>
+        <li>
+            <a href="ASRLOAN4.html">CASHCALCULATOR</a>
+        </li>
+        <li>
+            <a href="ASRLOAN5.html">PROFILE</a>
+        </li>
+        <li>
+            <a href="ASRLOAN3.html">LOGIN</a>
+        </li>
+        <li>
+            <a href="ASRLOAN3.html">SHOP</a>
+        </li>
+    </UL>
+
+    </nav>
+    <div class="box">
+     <div class="ASR">
+        <span style="--i:11;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:71;"></span>
+        <span style="--i:81;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:81;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:51;"></span>
+        <span style="--i:49;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:59;"></span>
+        <span style="--i:49;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:51;"></span>
+        <span style="--i:61;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:15;"></span>
+        <div class="con">
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="loan10.jpg"></div>
+          <div class="swiper-slide"><img src="loan12.png"></div>
+          <div class="swiper-slide"><img src="loan2.jpg"></div>
+          <div class="swiper-slide"><img src="loan3.jpg"></div>
+          <div class="swiper-slide"><img src="loan6.jpg"></div>
+          <div class="swiper-slide"><img src="loan8.jpg"></div>
+          
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+        
+        
+     </div>
+    </div>   
+    
+    <script>
+        const swiper = new Swiper('.swiper', {
+          
+       
+        
+       loop: true,
+     
+       pagination: {
+         el: '.swiper-pagination',
+         clickable: true,
+       },
+     
+       
+       navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+       },
+     
+     });
+
+
+</body>
+</html>

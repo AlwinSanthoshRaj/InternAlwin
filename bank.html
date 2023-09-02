@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+
+          *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+            
+
+        }
+        h1{
+            background-color: blueviolet;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            text-transform: uppercase;
+            opacity: 1;
+        }
+        button{
+                margin-left: 20px;
+                background-color: black;
+                margin-top: 0px;
+                color: antiquewhite;
+                padding: 5px;
+            }
+            label{
+                display: block;
+            }
+            button:hover{
+                cursor:crosshair;
+                padding: 5px;
+                background-color: azure;
+                color: black;
+                transition: 0.12s;
+                margin-left:30px ;
+            }
+            input{
+                padding: 5px;
+                margin-left: 5px;
+            }
+            .box nav{
+                text-align: center;
+                justify-content: center;
+                padding: 10em;
+            }body{
+        justify-content: center;
+        text-align: center;
+        margin: 15em;
+        background-color: rgb(11, 11, 53);
+        display: flex;
+        color: aliceblue;
+       }
+       .box{
+        width: 500px;
+        height: 700px;
+        border: 1px solid #ffffff;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(58, 57, 57);
+        padding:3em; 
+        overflow: hidden;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 5px;
+        box-shadow: 0 20px 35px rgb(58, 57, 57);
+       }
+       .box::before{
+        content: '';
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        align-items: center;
+        background: repeating-conic-gradient( #e81058,#f6d20a 25%,#11e493,#252283 50%,transparent 20%,transparent 30%,transparent 40%,#ec0625,#d5f009,#03f095,#ede204,#e704eb);
+        animation: animate 4s linear infinite;
+        left: -25%;
+        top: -25%;
+       }
+       .box::after{
+        content: '';
+        position: absolute;
+        background: black;
+        inset:4px;
+       }
+       @keyframes animate{
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+       }
+       .box nav{
+        position: relative;
+        z-index: 1;
+
+        
+       }
+       
+button{
+    padding: 10px;
+    border-radius: 8px solid blueviolet;
+    
+
+}
+ button:hover{
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgb(186, 7, 241),0 0 50px rgb(186, 7, 241);}
+      
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <nav>
+    <h1><u>ACCOUNT DETAILS</u></h1><br><br>
+    <label>BANK NAME:</label>
+    <input type="text" placeholder="bank name"><br><br>
+    
+    <label>ACCOUNT NO:</label>
+    <input type="text" placeholder="Account number"><br><br>
+    <label>Aadhaar NO:</label>
+    <input type="text" placeholder="Aadhaar number"><br><br>
+    <label>D:O:B</label>
+    <input type="date"><br><br>
+    <label> BANK BRANCH:</label>
+    <input type="text" placeholder="name"><br><br>
+    <label>MICR NO:</label>
+    <input type="text" placeholder="MICR number"><br><br>
+    <label>IFSC NO:</label>
+    <input type="text" placeholder="IFSC number"><br><br>
+    <label>STATE:</label>
+    <input type="text" placeholder="name"><br><br>
+    <a href="ASRLOAN4.html"><button>submit</button></a>
+    </nav>
+    </div>
+
+
+
+
+    
+</body>
+</html>

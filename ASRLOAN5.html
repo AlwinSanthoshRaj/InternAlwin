@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aqua;
+
+        }
+        h1{
+            background-color: blueviolet;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            text-transform: uppercase;
+            
+        }
+        button{
+                margin-left: 20px;
+                background-color: black;
+                margin-top: 0px;
+                color: antiquewhite;
+                padding: 5px;
+            }
+            label{
+                display: block;
+            }
+            button:hover{
+                cursor:crosshair;
+                padding: 1px;
+                background-color: azure;
+                color: black;
+                transition: 0.12s;
+                margin-left:30px ;
+            }
+            input{
+                padding: 5px;
+                margin-left: 5px;
+            }
+            .box nav{
+                text-align: center;
+                justify-content: center;
+                padding: 10em;
+            }body{
+        justify-content: center;
+        text-align: center;
+        margin: 15em;
+        background-color: rgb(11, 11, 53);
+        display: flex;
+        color: aliceblue;
+       }
+       .box{
+        width: 600px;
+        height: 700px;
+        border: 1px solid #ffffff;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(58, 57, 57);
+        padding:3em; 
+        overflow: hidden;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 5px;
+        box-shadow: 0 20px 35px rgb(58, 57, 57);
+       }
+       .box::before{
+        content: '';
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        align-items: center;
+        background: repeating-conic-gradient( #e81058,#f6d20a 25%,#11e493,#252283 50%,transparent 20%,transparent 30%,transparent 40%,#ec0625,#d5f009,#03f095,#ede204,#e704eb);
+        animation: animate 4s linear infinite;
+        left: -25%;
+        top: -25%;
+       }
+       .box::after{
+        content: '';
+        position: absolute;
+        background: black;
+        inset:4px;
+       }
+       @keyframes animate{
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+       }
+       .box nav{
+        position: relative;
+        z-index: 1;
+
+        
+       }
+        
+        
+    
+            
+    </style>
+</head>
+<body>
+    <div class="box">
+        <nav>
+    <h1> loan application form</h1>
+    <h2>
+    <label>name:</label>
+    <input type ="text" placeholder="enter your name"><br>
+    <label>email:</label>
+    <input type ="email" placeholder="email"><br>
+    <label>phone number:</label>
+    <input type="text" placeholder="number"><br>
+    <label>D:O:B:</label>
+    <input type ="date"><br>
+    <label>ADDRESS:</label>
+<input type ="text" placeholder="address"><BR>
+    
+ <label>Aadhar no:</label>
+<input type ="text" placeholder="Aadhar no"><BR>
+    <label>gender:</label></h2>
+    <input type ="radio" name="gender" value="male">male
+    <input type="radio" name="gender" value="female">female<br>
+    
+<label>occupation:</label>
+<input type ="text" placeholder="name"><BR>
+ <label>company name:</label>
+<input type ="text" placeholder="name"><BR>
+    <h2><label>country name:</label>
+    <select>
+        <option value="india"> india</option>
+        <option value="england"> england</option>
+        <option value="Australia"> Australia</option>
+        <option value="china"> china</option>
+        <option value="france"> france</option>
+        <option value="germany"> germany</option>
+        <option value="brazil"> brazil</option>
+        <option value="japan"> japan</option>
+        <option value="canada"> canada</option>
+        <option value="west indies"> west indies</option>
+        <option value="pakistan"> pakistan</option>
+        <option value="new zealand"> new zealand</option>
+        <option value="sri lanka"> sri lanka</option>
+        <option value="south africa"> south africa</option>
+        
+    </select><br>
+    <a href ="bank.html">
+        <button>submit</button>
+    </a></h2>
+    </nav>
+</div>
+</body>
+</html>

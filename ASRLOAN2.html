@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            height: 100vh;
+            background-color: black;
+            color: aliceblue;
+            overflow: hidden;
+            z-index: 1;
+            animation:alwin 6s linear infinite;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        @keyframes alwin{
+        0%{
+            background: url("beauty..jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+        }
+        20%{ background: url("electronics.jpg");
+        background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    }
+        40%{
+            background: url("shopup.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        80%{
+            background: url("shop7.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        100%{ background: url("ie7gviwd.png");
+        background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+    
+    }
+
+
+        }
+        nav{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;}
+            nav ul{ 
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        nav ul li{
+            list-style-type: none;
+            padding: 5px;
+            margin: 10px;
+            margin-right: 10px;}
+            nav ul li a{
+        text-decoration: none;
+        color: antiquewhite;
+        text-transform: uppercase;
+        font-size:1.5rem;
+        font-weight: bolder;
+        font-family: 'Courier New', Courier, monospace;
+padding-right: 25px;}
+        nav h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            color:black;}
+            nav a:hover{
+            background-color: black;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+            font-size: 1.3rem;}
+
+        .box{
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .ASR {
+            position: relative;
+            display: flex;
+
+        }
+        .ASR span{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            background: #030303;
+            margin: 0 4px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 10px #eff1f244,0 0 50px #fafcfd,0 0 0 10px #080808;
+            animation: animate 15s linear infinite;
+        }
+        .ASR span:nth-child(odd){
+            background: red;
+            box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #e8ba04,0 0 0 10px #fbf9f9;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(50s / var(--i));
+
+        }
+        .ASR span:nth-child(even){
+            background: rgb(9, 247, 251);
+            box-shadow: 0 0 0 10px #4fc3dc44,0 0 50px #00ccff,0 0 0 10px #d400d4;
+            animation: animate 15s linear infinite;
+            animation-duration: calc(50s / var(--i));}
+        
+        @keyframes animate{
+            0%{
+                transform: translateY(100vh) scale(0);
+            }
+            100%{
+                transform: translateY(-10vh) scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <h1>LOAN APPLICATION</h1><!--header-->
+    <UL>
+        <li>
+            <a href="ASRLOAN3.html">LOGIN</a>
+        </li>
+        <li>
+            <a href="ASRLOAN5.html">PROFILE</a>
+        </li>
+        <li>
+            <a href="bank.html">BANK DETAIL</a>
+        </li>
+        <li>
+            <a href="ASRLOAN4.html">CASHCALCULATOR</a>
+        </li>
+        <li>
+            <a href="ASRhome.html">HOME</a>
+        </li>
+        <li>
+            <a href="shop.html">SHOP</a>
+        </li>
+    </UL>
+
+
+    
+
+    
+    <!--
+    <div class="box">
+     <div class="ASR">
+        <span style="--i:11;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:71;"></span>
+        <span style="--i:81;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:81;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:51;"></span>
+        <span style="--i:49;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:59;"></span>
+        <span style="--i:49;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:51;"></span>
+        <span style="--i:61;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:15;"></span>
+        
+     -->
+
+
+</body>
+</html>

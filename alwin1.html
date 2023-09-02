@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDBI</title>
+    
+    <style>
+             *{
+            margin: 0;
+            padding: 0;
+            box-sizing:border-box ;
+        }
+       body{
+        background-color: aqua;
+        background-image: url("C:\Users\Alwin santhosh raj\Downloads/bible.jpg");
+       }
+        nav{
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+
+        nav ul 
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        nav ul li{
+            list-style-type: none;
+            padding: 5px;
+            margin: 10px;
+            margin-right: 50px;
+        }
+        nav ul li a{
+        text-decoration: none;
+        color: antiquewhite;
+        text-transform: uppercase;
+        font-size:1.5rem;
+        font-weight: bolder;
+        font-family: 'Courier New', Courier, monospace;
+padding-right: 20px;
+      
+          }
+        nav h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 2rem;
+            color:black;
+       
+       
+        }
+        nav a:hover{
+            background-color: black;
+            border: 2px solid red;
+            border-radius: 5px;
+            padding: 5px;
+            border: none;
+            font-size: 1.3rem;}
+            body{
+        justify-content: center;
+        text-align: center;
+        margin: 15em;
+        background-color: rgb(11, 11, 53);
+        display: flex;
+        color: aliceblue;
+       }
+       .box{
+        width: 40px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(58, 57, 57);
+        padding:3em; 
+        overflow: hidden;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 5px;
+        box-shadow: 0 20px 35px rgb(58, 57, 57);
+       }
+       .box::before{
+        content: '';
+        position: absolute;
+        width: 150%;
+        height: 150%;
+        align-items: center;
+        background: repeating-conic-gradient( #e81058,#f6d20a 25%,#11e493,#252283 50%,transparent 20%,transparent 30%,transparent 40%,#ec0625,#d5f009,#03f095,#ede204,#e704eb);
+        animation: animate 4s linear infinite;
+        left: -25%;
+        top: -25%;
+       }
+       .box::after{
+        content: '';
+        position: absolute;
+        background: black;
+        inset:4px;
+       }
+       @keyframes animate{
+        0%{
+          transform: rotate(0deg);
+        }
+        100%{
+          transform: rotate(360deg);
+        }
+       }
+       .box nav{
+        position: relative;
+        z-index: 1;
+
+        
+       }
+    </style>
+        
+        
+</head>
+<body><!--partial:index.partial.html-->
+    <nav>
+        <h1>DDBI Student</h1><!--header-->
+    <UL>
+        <li>
+            <a href="sign in .html">home</a>
+        </li>
+        <li>
+            <a href="raj.html" target="_blank">login</a>
+        </li>
+        <li>
+            <a href="alwin submit.html">signup</a>
+        </li>
+        <li>
+            <a href="ASR.HTML">VERIFY</a>
+        </li>
+    </UL>
+
+    </nav>
+</body><!--partial:index.partial.html-->
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            background:black;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        .box h1{
+            color: aliceblue;
+            display: flex;
+            border: 3px solid gold;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 50px;
+            margin-right: 700px;
+          padding: 15px;
+          box-shadow: 0 0 10px white;
+          border-radius: 15px;
+          text-shadow: 0 0 10px red;
+
+        }
+       
+            
+
+        
+
+        
+        
+        img{
+            width: 300px;
+            height: 250px;
+            position: absolute;
+            display: flex;
+        }
+        .bible{
+            width: 300px;
+            height: 250px;
+            display: flex;
+            position: relative;
+            margin-top: 20%;
+            margin-left: 40%;
+            perspective: 1000px;
+            transform-style: preserve-3d;
+            transform: rotateX(-10deg) rotatez(-10deg);
+            animation: animate 20s linear infinite;
+        }
+        @keyframes animate{
+            60%{
+                transform: rotatex(30%);
+            }
+            80%{
+                transform: rotatex(-30deg);
+            }
+        }
+        .image{
+            width: 100%;
+            display: flex;
+            position: absolute;
+            transform-style: preserve-3d;
+            animation: animate 20s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotateY(0%);
+            }
+            100%{
+                transform: rotateY(360deg);
+            }
+            
+        }
+        img:nth-child(1){
+            transform: rotateY(60deg) translatez(300px);
+        }
+        img:nth-child(2){
+            transform: rotateY(120deg) translatez(300px);
+        }
+        img:nth-child(3){
+            transform: rotateY(180deg) translatez(300px);
+        }
+        img:nth-child(4){
+            transform: rotateY(240deg) translatez(300px);
+        }
+        img:nth-child(5){
+            transform: rotateY(300deg) translatez(300px);
+        }
+        img:nth-child(6){
+            transform: rotateY(360deg) translatez(300px);
+        }
+        img:hover{
+            width: 340px;
+            height: 220px;
+            cursor: pointer;
+        }
+        .a1 a button{
+            position:relative;
+            top:650px;
+            right:850px;
+            padding: 10px;
+            border: 2px solid navy;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gold;
+            font-size: medium;
+            font-weight: 500;
+            animation: alwin 3s infinite alternate ;
+
+        }
+        @-webkit-keyframes alwin {
+
+            0%{
+
+                transform: translateX(0px);
+            }
+            100%{
+
+            transform: translateX(200px);
+            }
+        }
+            .a1 a button:hover{
+
+                color:red;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="bible">
+        <div class="image">
+            <img src="loan12.png">
+            <img src="loan8.jpg">
+            <img src="loan10.jpg">
+            <img src="loan2.jpg">
+            <img src="loan3.jpg">
+            <img src="loan6.jpg">
+
+        </div>
+    </div>
+    <div class="box">
+        <h1>LOAN APPLICATION</h1>
+     </div>
+    <div class="a1">
+        <a href="ASRLOAN2.html"><button> WELCOME</button></a>
+    </div>
+</body>
+</html>

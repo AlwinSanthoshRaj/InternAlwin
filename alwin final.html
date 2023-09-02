@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDBI</title>
+    <style>
+        body{
+            background-color:rgb(11, 11, 11);
+            position: relative;
+            margin: 10em;
+            padding: 2em;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            color: aliceblue;
+            
+
+        }
+        
+        .box{
+
+            align-items: center;
+            font-size: 50px;
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 200%;
+            text-align: center;
+            justify-content: center;
+            background: rgb(73, 71, 71);
+            overflow: hidden;
+            
+        
+
+
+        }
+        .box::before{
+            content: '';
+        position: absolute;
+        width: 2000px;
+        height: 1500px;
+        align-items: center;
+        background: repeating-conic-gradient( #e81058,#f6d20a 25%,#a607ea,#252283 50%,transparent 20%,transparent 30%,transparent 40%,#f7f5f5,#d5f009,#03f095,#ede204,#e704eb,black,rgb(116, 113, 113));
+        animation: animate 4s linear infinite;
+
+        }
+        .box::after{
+            content: '';
+            position: absolute;
+            background: rgb(87, 85, 85);
+            
+            inset: 4px;
+        }
+        @keyframes animate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .box nav{
+            position: relative;
+            z-index: 1;
+
+        }
+        
+    </style>
+ </head>
+ <body>
+    <div class="box">
+        <nav>
+    <h1>submitted done &#128077;</h1></div>
+<script>
+    window.alert("DONE")
+</script>
+</nav>
+</body>
+</html>
